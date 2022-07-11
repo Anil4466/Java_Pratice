@@ -1,29 +1,18 @@
+//Write a java program to find sum of first and last digits of a number.
 import java.util.*;
-class Demo
+public class Demo
   {
-    public static void main(String[]args)
-    {
-     
-      Scanner sc=new Scanner(System.in);
-      System.out.println("Enter size of array");
-       int n=sc.nextInt();
-      int a[]=new int[n];
-      System.out.println("Enter the array element");
-        for(int i=0;i<n;i++)
-        {
-             a[i]=sc.nextInt();
-        }
-       System.out.println("First Array elements are");
-         for(int i=0;i<n;i++)
-         {
-            System.out.println(a[i]);
-         }
-        System.out.println("second Array elements are");
-      int b[]=new int[n];
-      for(int i=0;i<n;i++)
-        {
-           b[i]=a[i];
-             System.out.println(b[i]);
-        }
+public static void main(String []args) {
+int n,sum=0;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter any number");
+  n=sc.nextInt();
+  int lastdigit=n%10;
+    while(n>10){
+      n=n/10;
     }
+sum=lastdigit+n;
+ System.out.println("sum of first and last digit of given number:"+sum);
+  
+}
   }
