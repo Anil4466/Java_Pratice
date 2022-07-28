@@ -1,0 +1,29 @@
+--create table StudentDetails(studentID int,FName varchar(12),LName varchar(12),Age int, EmailId varchar(15),Gender varchar(12),Address varchar(12),RollNo int);
+--insert into StudentDetails values(121,"Anil","Kumar",23,"anil12@gmail.com","male","Ballari",01),(122,"Akhil","kumar",22,"akhil@gmail.com","male","Ballari",02),(123,"pavan","kumar",23,"pavan@gmail.com","male","Ballari",03),(124,"sachin","kumar",24,"sachin@gmail.com","male","Ballari",04),(125,"sharan","kumar",22,"sharan@gmail.com","male","Ballari",05),(126,"nikil","kumar",22,"niki@gmail.com","male","Ballari",06),(127,"sunil","kumar",23,"sunil@gmail.com","male","Ballari",07),(128,"karthik","kumar",22,"karthi@gmail.com","male","Ballari",08),(129,"vijay","kumar",24,"vijay@gmail.com","male","Ballari",09),(130,"anand","kumar",25,"anand@gmail.com","male","Ballari",10);
+--create table DeptDetails(DeptId int,DeptName varchar(15),CreatedDate varchar(12));
+--insert into DeptDetails values(112,"CSE","01/07/2022"),(113,"MECH","05/07/2022"),(114,"EEE","12/07/2022"),(115,"CSE","15/07/2022"),(116,"E&E","01/07/2022");
+--create table SubjectDeptDetails(SubjectId int,Subject varchar(12),DeptId int);
+--insert into SubjectDeptDetails values(1,"python",12),(2,"java",13),(3,"DBMS",14),(4,"python",15),(5,"java",16),(6,"python",17),(7,"java",18),(8,"DBMS",19),(9,"python",20),(10,"java",21),(11,"DBMS",22),(12,"python",23),(13,"java",24),(14,"DBMS",25),(15,"java",26),(16,"python",27),(17,"DBMS",28),(18,"java",29),(19,"DBMS",30),(20,"python",31);
+--create table StudentDeptDetails(SDeptId int,StudentId int,DeptId int);
+--insert into StudentDeptDetails values(1,7,1),(1,1,1),(2,2,1),(3,3,1),(4,2,1),(1,5,1),(2,6,1),(1,9,1),(3,10,1),(1,11,1);
+--create table StudentMarks(SMID int,StudentId int,SubjectId int,Marks int,Percentage double);
+--insert into StudentMarks values(1,11,61,455,78.25),(1,12,61,550,78.25),(2,13,62,350,78.20),(3,30,64,526,78.25),(4,47,61,325,78.25),(5,14,64,550,78.25),(6,31,62,450,78.25),(7,48,61,326,78.25),(8,15,65,455,75.25),(9,32,63,469,78.25),(10,50,61,420,78.25),(11,16,51,480,78.25),(12,33,65,350,78.25),(13,51,61,350,78.25),(14,17,41,420,78.25),(15,34,61,550,78.25),(16,52,61,550,78.25),(17,18,65,422,78.25),(18,35,61,510,78.25),(19,53,61,580,78.25),(20,19,61,456,78.25),(21,36,61,410,78.25),(22,54,65,490,78.25),(23,20,62,424,78.25),(24,37,61,460,78.25),(25,55,61,470,78.25),(26,21,63,465,78.25),(27,38,61,480,78.25),(28,56,61,460,78.25),(28,22,64,324,78.25),(29,39,61,490,78.25),(30,57,65,450,78.25),(31,23,65,345,78.25),(32,40,65,411,78.25),(33,58,61,420,78.25),(34,24,66,365,78.25),(35,41,61,425,78.25),(36,59,63,410,78.25),(37,25,68,551,78.25),(38,42,66,542,78.25),(39,60,61,259,78.25),(40,26,65,500,78.25),(41,43,61,251,78.25),(42,61,62,454,78.25),(43,27,67,524,78.25),(44,44,61,541,78.25),(45,62,51,420,78.25),(46,28,69,298,78.25),(47,45,65,452,78.25),(48,63,52,457,78.25),(49,29,65,569,78.25),(50,46,61,451,78.25);
+--update StudentDetails set studentID=6 where FName="pavan";
+
+--Assignments queries:
+--1) select * from StudentDetails;
+--2) select studentID from StudentDetails;
+--3) select FName,LName from StudentDetails where Age>20;
+--4) select FName from StudentDetails where studentID<10;
+--5) select * from StudentDetails where studentID<1.2 or studentID<7;
+--6) select * from StudentDetails where studentID<10;
+--7) update StudentDetails set FName="Vijay" where studentID=6;
+--8) update DeptDetails set DeptName="CSE" where DeptId=3;
+--9) update StudentDetails set Age=20 where studentID=125;
+--10) delete from DeptDetails where DeptName="";
+--11) select * from StudentDetails where Fname="  ";
+--12) select distinct Age from StudentDetails;
+--13) select max(Marks) from StudentMarks;
+--15) select * from StudentDetails order by studentID asc;
+--14)select * from StudentDetails order by RollNo desc;
+--14) select * from StudentDetails order by FName asc;
